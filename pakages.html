@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roavia | Travel Packages</title>
+  <link rel="stylesheet" href="pakages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script defer src="packages.js"></script>
+
+
+  <script src="lol.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Roavia</h1>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <nav class="menu" id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pakages.html">Destinations</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <section class="hero-banner">
+    <img src="bnerpakage.jpg" alt="Travel Banner" class="banner-img" />
+    <div class="hero-text">
+      <h1>Explore Packages</h1>
+      <p>Your journey begins here</p>
+    </div>
+  </section>
+
+  <section class="packages-section">
+    <h2>International Tour Packages</h2>
+    <div class="packages-container"  onclick="goToDetail('pakistan')">
+      <div class="package-card">
+        <img src="pakistan.jpg" alt="Paris" />
+        <div class="package-info">
+          <h3>Pakistan</h3>
+          <p>5 Nights / 6 Days</p>
+          <span class="price">$1,799</span>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="qatar.webp" alt="Bali" />
+        <div class="package-info">
+          <h3>Qatar</h3>
+          <p>6 Nights / 7 Days</p>
+          <span class="price">$1,299</span>
+        </div>
+      </div>
+       <div class="package-card">
+        <img src="Turkmenistan-Kipchak-Turkmenbashi-Mosque.webp" alt="Dubai" />
+        <div class="package-info">
+          <h3>Turkmenistan</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$2,100</span>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="japan4.jpg" alt="Tokyo" />
+        <div class="package-info">
+          <h3>Japan</h3>
+          <p>4 Nights / 5 Days</p>
+          <span class="price">$1,999</span>
+        </div>
+      </div>
+
+     
+
+      
+      <div class="package-card">
+        <img src="china.jpg" alt="china" />
+        <div class="package-info">
+          <h3> China</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,800</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="thailand 3.jpg" alt="Thailand" />
+        <div class="package-info">
+          <h3>Thailand</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,300</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="malaysia.jpg" alt="malaysia" />
+        <div class="package-info">
+          <h3> Malaysia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,250</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="vatinam.jpg" alt="vatinam" />
+        <div class="package-info">
+          <h3>Vietnam</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,000</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="nepal.jpg" alt="nepal" />
+        <div class="package-info">
+          <h3>Nepal</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="srilanka.jpg" alt="srilanka" />
+        <div class="package-info">
+          <h3>Sri Lanka</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="philino.jpg" alt="philino" />
+        <div class="package-info">
+          <h3>Philippines</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,600</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="protagal.jpg" alt="Portugal" />
+        <div class="package-info">
+          <h3>Portugal</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,400</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="unitedkingdom.jpg" alt="unitedkingdom" />
+        <div class="package-info">
+          <h3>United Kingdom</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,700</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="crotia.jpg" alt="Croatia" />
+        <div class="package-info">
+          <h3>Croatia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,800</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="egypt.jpg" alt="Egypt" />
+        <div class="package-info">
+          <h3>Egypt</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,200</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="kenya.jpg" alt="Kenya" />
+        <div class="package-info">
+          <h3> Kenya</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,400</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="tanzania.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Tanzania</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,200</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="ethiopia.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Ethiopia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="brazil.jpg" alt="Brazil" />
+        <div class="package-info">
+          <h3>Brazil</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,200</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="argentina.jpg" alt="Argentina" />
+        <div class="package-info">
+          <h3> Argentina</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,300</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="newziland2.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>New Zealand</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,000</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="fiji.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Fiji</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,250</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="vanuata.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Vanuatu</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="amerina.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Armenia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,400</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="georgia.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Georgia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,250</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="kazakstan.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3> Kazakhstan</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,150</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="uzbekistan.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3> Uzbekistan</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$999</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="azernaijan.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Azerbaijan</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,550</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="kyrgyzstan.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Kyrgyzstan</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,450</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Lebanon.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Lebanon</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,250</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Oman.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Oman</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,350</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Bahrain.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Bahrain</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="kuwait.jpg" alt="Dubai" />
+        <div class="package-info">
+          <h3>Kuwait</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,150</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="yemen.webp" alt="Dubai" />
+        <div class="package-info">
+          <h3>Yemen</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$950</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Bora Bora.jpg" alt="Bora" />
+        <div class="package-info">
+          <h3>Bora Bora</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,150</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Maldives.jpg" alt="Maldives" />
+        <div class="package-info">
+          <h3>Maldives</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Saudi Arabia.jpg" alt="Saudi" />
+        <div class="package-info">
+          <h3>Saudi Arabia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,400</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="turkey.jpg" alt="Turkey" />
+        <div class="package-info">
+          <h3>Turkey</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,600</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Colombia.jpg" alt="Colombia" />
+        <div class="package-info">
+          <h3> Colombia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,050</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Ecuador.jpg" alt="Ecuador" />
+        <div class="package-info">
+          <h3> Ecuador</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,200</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="Uruguay.jpg" alt="Uruguay" />
+        <div class="package-info">
+          <h3>Uruguay</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,100</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="vene.jpg" alt="Venezuela" />
+        <div class="package-info">
+          <h3> Venezuela</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$999</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="newziland.jpg" alt="newziland" />
+        <div class="package-info">
+          <h3>New Zealand</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,200</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="austrila.jpg" alt="Australia" />
+        <div class="package-info">
+          <h3>Australia</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,700</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="noeway.jpg" alt="Norway" />
+        <div class="package-info">
+          <h3>Norway</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,000</span>
+        </div>
+      </div>
+      
+      <div class="package-card">
+        <img src="poland.jpg" alt="Poland" />
+        <div class="package-info">
+          <h3> Poland</h3>
+          <p>3 Nights / 4 Days</p>
+          <span class="price">$1,500</span>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+
+   <footer class="mega-footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <h3>About Roavia</h3>
+        <p>Roavia crafts premium travel experiences for modern explorers. We blend luxury, wonder, and unforgettable
+          moments in every journey.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pakages.html">Destinations</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-help">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Travel Insurance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: support@roavia.com</p>
+        <p>Phone: +92 312 0000000</p>
+        <p>Location: Lahore, Pakistan</p>
+      </div>
+    
+
+          <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i style="padding-left: 6px; padding-right: 6px;" class="fab fa-facebook-f"></i></a>
+          <a href="#"><i style="padding-left: 5px; padding-right: 5px;" class="fab fa-instagram"></i></a>
+          <a href="#"><i style="padding-left: 3px; padding-right: 3px;" class="fab fa-youtube"></i></a>
+          <a href="#"><i style="padding-left: 5px; padding-right: 5px;" class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+   
+  </footer>
+
+  <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+</a>
+   <div class="footer-bottom">
+      <p>&copy; 2025 Roavia. All Rights Reserved.</p>
+    </div>
+<script>
+  window.addEventListener("scroll", function () {
+    const formBox = document.querySelector(".contact-form-container");
+    const formPosition = formBox.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight - 100;
+
+    if (formPosition < screenPosition) {
+      formBox.classList.add("fade-in-up");
+    }
+  });
+
+  
+  const toggleBtn = document.getElementById('theme-toggle');
+
+ 
+  if (localStorage.getItem('theme') === 'dark-theme') {
+    document.body.classList.add('dark-theme');
+    toggleBtn.textContent = '☀';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    const isDark = document.body.classList.contains('dark-theme');
+    localStorage.setItem('theme', isDark ? 'dark-theme' : 'light');
+    toggleBtn.textContent = isDark ? '☀' : '🌙';
+  });
+
+ 
+  document.getElementById("hamburger").addEventListener("click", () => {
+    document.getElementById("nav-menu").classList.toggle("active");
+  });
+
+ 
+  window.addEventListener("scroll", () => {
+    document.querySelectorAll(".package-card").forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        card.classList.add("visible");
+      }
+    });
+  });
+
+    window.addEventListener('scroll', () => {
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+    if (window.scrollY > 100) {
+      whatsappBtn.classList.add('whatsapp-visible');
+    } else {
+      whatsappBtn.classList.remove('whatsapp-visible');
+    }
+  });
+</script>
+
+</body>
+</html>

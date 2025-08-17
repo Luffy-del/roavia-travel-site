@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experiences | Roavia</title>
+  <link rel="stylesheet" href="experiences.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <script src="lol.js"></script>
+</head>
+<body>
+ <header>
+    <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>Roavia</h1>
+  <nav class="menu" id="nav-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pakages.html">Destinations</a></li>
+      <li><a href="experiences.html" class="active">Experiences</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+ <button id="theme-toggle" class="theme-toggle">🌙</button>
+</header>
+
+  <section class="hero-banner">
+    <img src="konigssee-7276585_1920.jpg" alt="Travel Banner" class="banner-img" />
+    <div class="hero-text">
+      <h1>Curated Experiences</h1>
+      <p>Unforgettable moments, designed for you.</p>
+    </div>
+  </section>
+
+  <section class="experience-grid">
+    <div class="exp-card">
+      <img src="family.jpg" alt="Family Travel">
+      <h3>Family Adventures</h3>
+      <p>Tailored for joy, bonding, and memories across generations.</p>
+    </div>
+    <div class="exp-card">
+      <img src="couple.jpg" alt="Romantic Getaway">
+      <h3>Romantic Getaways</h3>
+      <p>Elegant escapes for couples looking to reconnect in luxury.</p>
+    </div>
+    <div class="exp-card">
+      <img src="solo.jpg" alt="Solo Travel">
+      <h3>Solo Exploration</h3>
+      <p>Bold journeys designed for self-discovery and personal growth.</p>
+    </div>
+    <div class="exp-card">
+      <img src="group.jpg" alt="Group Travel">
+      <h3>Group Travel</h3>
+      <p>Customized for seamless bonding, shared adventures, and fun.</p>
+    </div>
+    <div class="exp-card">
+      <img src="hooneymoon2.jpg" alt="Honeymoon Travel">
+      <h3>Luxury Honeymoons</h3>
+      <p>Start your forever with unforgettable, handpicked experiences.</p>
+    </div>
+  </section>
+
+  <footer class="mega-footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <h3>About Roavia</h3>
+        <p>Roavia crafts premium travel experiences for modern explorers. We blend luxury, wonder, and unforgettable
+          moments in every journey.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pakages.html">Destinations</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-help">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Travel Insurance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Email: support@roavia.com</p>
+        <p>Phone: +92 312 0000000</p>
+        <p>Location: Lahore, Pakistan</p>
+      </div>
+    
+
+          <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i style="padding-left: 6px; padding-right: 6px;" class="fab fa-facebook-f"></i></a>
+          <a href="#"><i style="padding-left: 5px; padding-right: 5px;" class="fab fa-instagram"></i></a>
+          <a href="#"><i style="padding-left: 3px; padding-right: 3px;" class="fab fa-youtube"></i></a>
+          <a href="#"><i style="padding-left: 5px; padding-right: 5px;" class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+   
+  </footer>
+
+   <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+</a>
+   <div class="footer-bottom">
+      <p>&copy; 2025 Roavia. All Rights Reserved.</p>
+    </div>
+  <script>
+  // Scroll animation for .exp-card
+  const cards = document.querySelectorAll('.exp-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+
+    window.addEventListener("scroll", function () {
+    const formBox = document.querySelector(".contact-form-container");
+    const formPosition = formBox.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight - 100;
+
+    if (formPosition < screenPosition) {
+      formBox.classList.add("fade-in-up");
+    }
+  });
+
+  
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  
+  if (localStorage.getItem('theme') === 'dark-theme') {
+    document.body.classList.add('dark-theme');
+    toggleBtn.textContent = '☀';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    const isDark = document.body.classList.contains('dark-theme');
+    localStorage.setItem('theme', isDark ? 'dark-theme' : 'light');
+    toggleBtn.textContent = isDark ? '☀' : '🌙';
+  });
+
+      
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  }
+    window.addEventListener('scroll', () => {
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+    if (window.scrollY > 100) {
+      whatsappBtn.classList.add('whatsapp-visible');
+    } else {
+      whatsappBtn.classList.remove('whatsapp-visible');
+    }
+  });
+
+</script>
+</body>
+</html>
